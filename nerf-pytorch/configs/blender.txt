@@ -1,0 +1,20 @@
+# Training parameters
+N_importance = 64       # Hierarchical sampling steps
+N_samples = 64          # Coarse sampling steps
+learning_rate = 5e-4    # Learning rate
+batch_size = 1024       # Rays per batch
+train_iters = 200000    # Training iterations
+
+# Dataset parameters
+dataset_type = 'blender' # Dataset type (blender format assumed)
+datadir = 'D:\\Model_Project\\data\\my_dataset' # Path to your dataset directory
+white_bkgd = True        # Use white background for transparency
+
+# Logging and saving
+log_dir = './logs/'      # Directory for logs
+ckpt_dir = './checkpoints/' # Directory for model checkpoints
+render_dir = './renders/'  # Directory for rendered images/videos
+
+# Rendering options
+render_only = False      # Set to True for rendering without training
+render_video = False     # Set to True for video rendering
